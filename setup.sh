@@ -1,5 +1,5 @@
 mkdir -p resources/config
-sudo apt update && sudo apt install git -y
+sudo apt update && sudo apt install git -y #verificar se ja existe e pular
 FOLDER_NAME=$(tr -dc 'a-z' </dev/urandom | head -c 10)
 git clone https://github.com/felipesms2/docker-web.git "$FOLDER_NAME"
 sudo chmod -R 777 . 
