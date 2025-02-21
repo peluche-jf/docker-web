@@ -5,5 +5,7 @@ git clone https://github.com/felipesms2/docker-web.git "$FOLDER_NAME"
 sudo chmod -R 777 . 
 mv "$FOLDER_NAME"/* "$FOLDER_NAME"/.* . 2>/dev/null
 rm "$FOLDER_NAME" -rf
-mv -f ports.conf 000-default.conf envars resources/config/
+mv -f ports.conf resources/config/
+mv -f 000-default.conf resources/config/
+mv -f envvars resources/config/
 rm setup.sh -rf

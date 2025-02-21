@@ -1,6 +1,6 @@
 services:
   savepoint:
-    container_name: savepoint
+    container_name: web-runtime
     image: felipesms/liga:1.0
     ports:
       - "8080:80"
