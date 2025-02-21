@@ -1,4 +1,4 @@
-# Descomente as linhas que achar necessário
+# Uncomment the lines that you want to use
 # mkdir /old-wp
 # chmod -R 777 /old-wp
 apt update
