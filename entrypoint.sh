@@ -1,7 +1,8 @@
-mkdir /old-wp
-chmod -R 777 /old-wp
+# Descomente as linhas que achar necessário
+# mkdir /old-wp
+# chmod -R 777 /old-wp
 apt update
-apt install zsh
+apt install zsh -y
 useradd -m -s /usr/bin/zsh sites
 sudo usermod -aG sudo sites
 pip install requests beautifulsoup4 --break-system-packages
@@ -13,8 +14,8 @@ cd /app/ && composer install && \
 cp .env.example .env && \
 php artisan key:generate && \
 # php artisan migrate:fresh --seed && \
-npm install && \
-npm run build &&
+# npm install && \
+# npm run build &&
 chmod -R 777 /app
 sudo a2enmod rewrite
 service apache2 start
